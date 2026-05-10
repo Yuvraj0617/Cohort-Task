@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+
+
+#white{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-right: 250px;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#logo{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#searchbox{
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #F0F0F0;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:#606264;
+}
+
+#main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#classification{
+    transform: rotate(-90deg);
+    font-size: 3rem;
+    font-weight: 700;
+    white-space: nowrap;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.list-item li{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.list-item li::marker {
+  color: red; 
+  font-size: 1.2rem;
+}
+
+hr{
+    width: 180px;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+#red{
+    width: 50%;
+    background-color: #B6342B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#nav li{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+#species-name{
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: start;
+    color: #F9EFEF;
+}
+
+#details{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image img{
+    max-width: 250px;
+    width: 100%;
+}
+
+#details2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9EFEF;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+#price{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#price h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color:#DABC92;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #DABC92;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+#details2 div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vertical{
+    width: 2px;
+    height: 80%;
+    background-color: #DABC92;
+}
+
+div#details2 div i{
+    font-size: 2rem;
+    color: #DABC92;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle div{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s ease;
+}
+
+
+#price p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #F9EFEF;
+}
+
+
+#price div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#main-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+

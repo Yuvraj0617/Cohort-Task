@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("poppins/Poppins-Regular.ttf") format("truetype"); /* changed: style.css is already inside assets, so remove the extra assets/ folder */
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #f6e7b5;
+    color: #080604;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+.page {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-panel {
+    position: relative;
+    width: 61.15%;
+    height: 100%;
+    background: #ffcc00;
+    padding: 30px 0 0 31px;
+    overflow: hidden;
+}
+
+.right-panel {
+    position: relative;
+    width: 38.85%;
+    height: 100%;
+    background: #f6e7b5;
+    overflow: visible;
+}
+
+.logo {
+    display: block;
+    width: 144px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.copy {
+    margin-top: 116px;
+    margin-left: 27px;
+    width: 438px;
+}
+
+.eyebrow {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-family: "Poppins-Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 118px;
+    line-height: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.description {
+    margin-top: 32px;
+    max-width: 395px;
+    color: rgba(0, 0, 0, .74);
+    font-size: 17px;
+    line-height: 1.48;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.count span {
+    width: 38px;
+    height: 2px;
+    background: #0b0905;
+}
+
+.pokeball-image {
+    position: absolute;
+    left: 34px;
+    bottom: -16px;
+    width: 218px;
+    height: 147px;
+    object-fit: contain;
+    opacity: .38;
+}
+
+.menu {
+    position: absolute;
+    top: 36px;
+    right: 43px;
+    z-index: 3;
+    display: grid;
+    gap: 6px;
+    width: 34px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu span {
+    display: block;
+    width: 34px;
+    height: 4px;
+    border-radius: 4px;
+    background: #080604;
+}
+
+.pikachu {
+    position: absolute;
+    z-index: 2;
+    left: -178px;
+    top: 128px;
+    width: 492px;
+    height: 514px;
+    object-fit: contain;
+}
+
+.pagination {
+    position: absolute;
+    right: 30px;
+    top: 45.2%;
+    display: grid;
+    gap: 13px;
+}
+
+.pagination span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #ffcc00;
+}
+
+.pagination .active {
+    background: #050505;
+}
