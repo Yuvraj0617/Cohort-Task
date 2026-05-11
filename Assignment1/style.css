@@ -6,9 +6,7 @@
 
 @font-face {
     font-family: "Poppins-Regular";
-    src: url("poppins/Poppins-Regular.ttf") format("truetype"); /* changed: style.css is already inside assets, so remove the extra assets/ folder */
-    font-weight: 400;
-    font-style: normal;
+    src: url("poppins/Poppins-Regular.ttf") format("truetype");
 }
 
 html,
