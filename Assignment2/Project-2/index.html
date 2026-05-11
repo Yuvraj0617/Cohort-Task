@@ -1,258 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <meta name="description" content="Aurora winter jacket collection website">
+    <meta name="author" content="Student">
+    <title>Aurora Winter Drop</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body id="main-body" class="body-section">
 
-<body>
-    <div>
-        <header id="header">
-            <div id="header-content">
-                <div id="header-text">
-                    <h1>2025/WINTER DROP</h1>
-                    <h1>NEW COLLECTION</h1>
-                </div>
-                <div id="header-list">
-                    <div>
-                        <li>[NEW COLLECTION]</li>
-                        <li>[LIMITED DROP]</li>
-                        <li>[WINTER]</li>
-                    </div>
-                    <div>
-                        <li>PUFFER JACKET</li>
-                        <li> TECH WEAR</li>
-                        <li>GLOSSY SILVER</li>
-                        <li>STEALTH BLACK</li>
-                    </div>
-                </div>
+    <div id="main-wrapper" class="page-shell">
+
+        <!-- Header section starts here -->
+        <header id="header" class="header">
+            <div id="title-box" class="title-block">
+                <p id="small-heading" class="eyebrow">2025 / WINTER DROP</p>
+                <h1 id="main-heading" class="main-title">NEW COLLECTION</h1>
             </div>
-            <div id="filter-btn">
-                <button>Filter
-                    <i class="ri-equalizer-2-line"></i>
-                </button>
+
+            <div id="collection-list" class="meta-block">
+                <span class="list-item">[ NEW COLLECTION ]</span>
+                <span class="list-item">[ LIMITED DROP ]</span>
+                <span class="list-item">[ WINTER 25 ]</span>
             </div>
+
+            <div id="type-list" class="meta-block">
+                <span class="type-item">PUFFER JACKETS</span>
+                <span class="type-item">TECH WEAR</span>
+                <span class="type-item">GLOSSY SILVER</span>
+                <span class="type-item">STEALTH BLACK</span>
+            </div>
+
+            <button id="filter-button" class="filter-btn" type="button">
+                <span class="filter-text">FILTERS</span>
+                <i class="ri-equalizer-2-line"></i>
+            </button>
         </header>
+
+        <main id="main-content" class="main-content">
+
+            <!-- Product grid starts -->
+            <section id="products-section" class="product-grid">
+
+                <div id="hero-product" class="hero-card">
+                    <div id="hero-content" class="hero-copy">
+                        <h2 id="brand-name" class="brand-title">AURORA<sup>TM</sup></h2>
+
+                        <div id="cart-box" class="hero-action">
+                            <button id="cart-arrow-btn" class="cart-arrow" type="button">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </button>
+                            <div id="price-box" class="price-box">
+                                <span class="cart-text">ADD TO CART</span>
+                                <strong class="hero-price">$1,999</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="product-1" class="product-card">
+                    <img class="product-image" src="./Assets/img1.png" alt="Aurora Silver puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">AURORA SILVER</h3>
+                        <p class="product-desc">REFLECTIVE PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-white"><i class="ri-circle-fill"></i> WHITE</span>
+                            <span class="color-blue"><i class="ri-circle-fill"></i> BLUE</span>
+                        </div>
+                        <strong class="product-price">$1,999.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-2" class="product-card">
+                    <img class="product-image" src="./Assets/img2.png" alt="Orbit Silver holographic puffer">
+                    <div class="product-info">
+                        <h3 class="product-title">ORBIT SILVER</h3>
+                        <p class="product-desc">HOLOGRAPHIC PUFFER</p>
+                        <div class="swatches">
+                            <span class="color-silver"><i class="ri-circle-fill"></i> SILVER</span>
+                        </div>
+                        <strong class="product-price">$1,999.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-3" class="product-card">
+                    <img class="product-image" src="./Assets/img3.png" alt="Stealth Black heavy down puffer">
+                    <div class="product-info">
+                        <h3 class="product-title">STEALTH BLACK</h3>
+                        <p class="product-desc">HEAVY DOWN PUFFER</p>
+                        <div class="swatches">
+                            <span class="color-black"><i class="ri-circle-fill"></i> BLACK</span>
+                            <span class="color-white"><i class="ri-circle-fill"></i> WHITE</span>
+                        </div>
+                        <strong class="product-price">$1,199.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-4" class="product-card">
+                    <img class="product-image" src="./Assets/img4.png" alt="Glacier White insulated puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">GLACIER WHITE</h3>
+                        <p class="product-desc">INSULATED PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-grey"><i class="ri-circle-fill"></i> GREY</span>
+                        </div>
+                        <strong class="product-price">$1,299.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-5" class="product-card">
+                    <img class="product-image" src="./Assets/img5.png" alt="Polar Gloss blue puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">POLAR GLOSS</h3>
+                        <p class="product-desc">BLUE PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-blue"><i class="ri-circle-fill"></i> BLUE GLOSS</span>
+                        </div>
+                        <strong class="product-price">$1,299.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-6" class="product-card">
+                    <img class="product-image" src="./Assets/img6.png" alt="Stealth Black heavy puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">STEALTH BLACK</h3>
+                        <p class="product-desc">HEAVY PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-navy"><i class="ri-circle-fill"></i> NAVY BLUE</span>
+                            <span class="color-black"><i class="ri-circle-fill"></i> BLACK</span>
+                        </div>
+                        <strong class="product-price">$1,199.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-7" class="product-card">
+                    <img class="product-image" src="./Assets/img7.png" alt="Deepfield Blue tech puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">DEEPFIELD BLUE</h3>
+                        <p class="product-desc">TECH PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-blue"><i class="ri-circle-fill"></i> BLUE</span>
+                        </div>
+                        <strong class="product-price">$1,299.99</strong>
+                    </div>
+                </div>
+
+                <div id="product-8" class="product-card">
+                    <img class="product-image" src="./Assets/img8.png" alt="Polar Miste white puffer jacket">
+                    <div class="product-info">
+                        <h3 class="product-title">POLAR MISTE</h3>
+                        <p class="product-desc">WHITE PUFFER JACKET</p>
+                        <div class="swatches">
+                            <span class="color-white"><i class="ri-circle-fill"></i> WHITE</span>
+                        </div>
+                        <strong class="product-price">$1,299.99</strong>
+                    </div>
+                </div>
+
+            </section>
+ 
+
+            <!-- Feature box starts -->
+            <section id="features-section" class="features">
+                <div id="feature-1" class="feature">
+                    <i class="ri-snowflake-line"></i>
+                    <div class="feature-text">
+                        <h4>PREMIUM INSULATION</h4>
+                        <p>Built for extreme winter conditions.</p>
+                    </div>
+                </div>
+
+                <div id="feature-2" class="feature">
+                    <i class="ri-shield-check-line"></i>
+                    <div class="feature-text">
+                        <h4>WATER RESISTANT</h4>
+                        <p>Advanced fabric technology.</p>
+                    </div>
+                </div>
+
+                <div id="feature-3" class="feature">
+                    <img class="feature-image" src="./Assets/Feather Pen.svg" alt="Feather icon">
+                    <div class="feature-text">
+                        <h4>ULTRA LIGHTWEIGHT</h4>
+                        <p>Maximum warmth, minimal weight.</p>
+                    </div>
+                </div>
+
+                <div id="feature-4" class="feature">
+                    <i class="ri-box-3-line"></i>
+                    <div class="feature-text">
+                        <h4>LIMITED EDITION</h4>
+                        <p>Exclusive designs. Limited quantities.</p>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- Footer starts -->
+        <footer id="footer" class="footer">
+            <div id="footer-left" class="footer-brand">
+                <div id="footer-logo" class="logo-mark">
+                    <i class="ri-mountain-line"></i>
+                </div>
+                <p id="copyright-text" class="copy-text">
+                    <span>&copy; 2025 AURORA<sup>TM</sup></span>
+                    ALL RIGHTS RESERVED
+                </p>
+            </div>
+
+            <nav id="footer-nav" class="footer-nav">
+                <a href="#" class="nav-link">SHOP</a>
+                <a href="#" class="nav-link">COLLECTIONS</a>
+                <a href="#" class="nav-link">ABOUT</a>
+                <a href="#" class="nav-link">LOOKBOOK</a>
+                <a href="#" class="nav-link">CONTACT</a>
+            </nav>
+
+            <div id="social-box" class="footer-socials">
+                <span class="follow-text">FOLLOW US</span>
+                <a href="#" class="social-link"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-link"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="social-link"><i class="ri-tiktok-fill"></i></a>
+            </div>
+        </footer>
+
+
     </div>
 
-    <main id="main-content">
-
-        <section id="product-section">
-
-            <div id="main-product">
-                <div> 
-                    <h3>AURORA <sup>TM</sup></h3>
-                </div>
-                <div>
-                    <div id="sidebtn">></div>
-                    <div>
-                        <p>ADD TO CART</p>
-                        <p>$1,999.99</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>AURORA SLIVER</h1>
-                    <p> REFLECTIVE PUFFER JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">WHITE</i>
-                        </div>
-                        <div>
-                            <i class="ri-circle-fill">BLUE</i>
-                        </div>
-                    </div>
-                    <p>$1,999.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>ORBITAL BLUE</h1>
-                    <p>HOLOGRAPHIC PUFFER </p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">SILVER</i>
-                        </div>
-                        <!-- <div></div> -->
-                    </div>
-                    <p>$1,999.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>STEALTH BLACK</h1>
-                    <p> HEAVY DOWN JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">BLACK</i>
-                        </div>
-                        <div>
-                            <i class="ri-circle-fill">WHITE</i>
-                        </div>
-                    </div>
-                    <p>$1,999.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>GLACIER WHITE</h1>
-                    <p> INSULATED PUFFER JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">WHITE</i>
-                        </div>
-                        <!-- <div>
-                        </div> -->
-                    </div>
-                    <p>$1,299.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>POLAR GLOSS</h1>
-                    <p>BLUE PUFFER JACKET</p>
-                    <div id="color">
-                        <div> 
-                            <i class="ri-circle-fill">BLUE GLOSS</i>
-                        </div>
-                        <!-- <div></div> -->
-                    </div>
-                    <p>$1,999.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>STEALTH BLACK</h1>
-                    <p>HEAVY PUFFER JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">NAVY BLUE</i>
-                        </div>
-                        <div>
-                            <i class="ri-circle-fill">BLACK</i>
-                        </div>
-                    </div>
-                    <p>$1,999.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>DEEPFEILD BLUE</h1>
-                    <p>TECH PUFFER JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">BLUE</i>
-                        </div>
-                        <!-- <div>
-                            <i class="ri-circle-fill">WHITE</i>
-                        </div> -->
-                    </div>
-                    <p>$1,299.99</p>
-                </div>
-            </div>
-
-            <div class="products">
-                <img src="" alt="">
-                <div>
-                    <h1>POLAR MISTE</h1>
-                    <p>WHITE PUFFER JACKET</p>
-                    <div id="color">
-                        <div>
-                            <i class="ri-circle-fill">WHITE</i>
-                        </div>
-                        <!-- <div>
-                            <i class="ri-circle-fill">BLUE</i>
-                        </div> -->
-                    </div>
-                    <p>$1,299.99</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="product-info">
-            <div>
-                <div><i class="ri-snowflake-fill"></i></div>
-                <div>
-                    <h1>Premium INSULATION</h1>
-                    <p>Built for extreme</p>
-                    <p>winter conditions</p>
-                </div>
-            </div>
-            <div>
-                <div><i class="ri-shield-check-line"></i></div>
-                <div>
-                    <h1>WATER-RESISTANT</h1>
-                    <p>Advanced fabric</p>
-                    <p>Technology.</p>
-                </div>
-            </div>
-            <div>
-                <div><i class="ri-leaf-fill"></i></div>
-                <div>
-                    <h1>ULTRA LIGHTWEIGHT</h1>
-                    <p>Maximum warmth</p>
-                    <p>minimal weight.</p>
-                </div>
-            </div>
-            <div>
-                <div><i class="ri-shopping-bag-2-fill"></i></div>
-                <div>
-                    <h1>LIMITED EDITION</h1>
-                    <p>Exclusive designs,</p>
-                    <p>Limited quantities.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer id="footer">
-        <div id="footer-content">
-            <div id="footer-logo"></div>
-            <div id="footer-info">
-                <p>&copy; 2025 AURORA <sup>TM</sup></p>
-                <p> ALL RIGHTS RESERVED</p>
-            </div>
-        </div>
-
-        <nav>
-            <li>SHOP</li>
-            <li>COLLECTIONS</li>
-            <li>ABOUT</li>
-            <li>LOOKBOOK</li>
-            <li>Contact</li>
-        </nav>
-
-        <div id="socials">
-            <div id="follow">Follow Us</div>
-            <div id="social-logo">
-                <i class="ri-instagram-line"></i>
-                <i class="ri-twitter-fill"></i>
-                <i class="ri-tiktok-fill"></i>
-            </div>
-        </div>
-    </footer>
-    </div>
 </body>
-
 </html>
