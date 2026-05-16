@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(./Assets/Manrope-VariableFont_wght.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(./Assets/NeueMachina-Light.woff2) format('woff2');
+}
+
+#container{
+    min-height: 100%;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 200px;
+    padding: 40px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+#menu{
+    width: max-content;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    color: white;
+    background: #0C0C0C;
+    list-style: none;
+    border: 1px solid rgb(253, 252, 252);
+    border-radius: 10px;
+}
+
+#Sign-up button{
+    margin-right: 30px;
+    background: #000000;
+    height: 50px;
+    padding:10px 20px;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+#Sign-up button:hover{
+    background: #E8601F;
+    cursor: pointer;
+}
+
+#screen{
+    height: calc(100% - 10%);
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hero{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 30px;
+}
+
+#hero div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#hero h4{
+    font-family: Manrope, sans-serif;
+    text-align: start;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(232, 96, 46);
+}
+
+#hero h1{
+    /* font-size: 2.7em; */
+    width: 90%;
+    font-family: NeueMachina, sans-serif;
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 61px;
+    line-height: 65px;
+}
+
+#hero p{
+    width: 90%;
+    font-family: Manrope, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 37px;
+    color: rgb(215, 215, 215);
+}
+
+.hero-btm{
+    display: flex;
+}
+#imgs{
+    display: flex;
+    
+    gap: 20px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}

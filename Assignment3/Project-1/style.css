@@ -106,27 +106,4 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 980px) {
-    .gallery-page {
-        padding-inline: 28px;
-    }
 
-    .art-grid {
-        grid-template-columns: repeat(2, minmax(190px, 1fr));
-        gap: 32px;
-    }
-}
-
-@media (max-width: 560px) {
-    .gallery-page {
-        padding: 32px 18px;
-    }
-
-    .top-bar h1 {
-        font-size: 21px;
-    }
-
-    .art-grid {
-        grid-template-columns: 1fr;
-    }
-}
