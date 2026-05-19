@@ -4,63 +4,617 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheriyans</title>
+    <title>Dribble</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main id="container">
-        <nav id="nav">
-            <div id="logo">
-                <img src="./Assets/full-logo.webp" alt="">
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="./Assets/imgi_1_Dribbble-Logo-500x281.png" alt="Dribbble Logo">
             </div>
-            <div id="menu">
-                <li>Home</li>
-                <li>Courses</li>
-                <li>Bootcamp</li>
-                <li>Classroom</li>
-                <li>Request Callback</li>
+            <div class="nav-items">
+                <li>Explore <i class="ri-arrow-drop-down-line"></i></li>
+                <li>Hire a Designer <i class="ri-arrow-drop-down-line"></i></li>
+                <li>Find Jobs</li>
+                <li>Blog</li>
             </div>
-            <div id="Sign-up">
-                <button>Sign Up</button>
-            </div>
-        </nav>
-
-        <div id="screen">
-            <section id="hero">
-                <div>
-                    <h4>LEARN. BUILD. GETPLACED.</h4>
-                </div>
-                <div>
-                    <h1>Become The Software Engineer That <span>Companies</span> Want To Hire!</h1>
-                </div>
-
-                <div>
-                    <p>Join a growing community of students preparing for real-world teach careers at Sheriyans.</p>
-                </div>
-                <div class="hero-btm">
-                    <div class="imgs">
-                        <img src="./Assets/img1.jpg" alt="img1">
-                        <img src="./Assets/img2.jpg" alt="img1">
-                        <img src="./Assets/img3.jpg" alt="img1">
-                        <img src="./Assets/img4.jpg" alt="img1">
-                    </div>
-                    <div>
-                        <h5><span>1 million+</span> Students learning in our mastery programs</h5>
-                    </div>
-                </div>
-                <button>Get Started</button>
-            </section>
-
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-
         </div>
+        <div class="nav-right">
+            <button class="signup">Sign Up</button>
+            <button class="login">Login</button>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="hero">
+            <h1>Discover the world’s top designers</h1>
+            <p>
+                Explore work from the most talented and accomplished designers ready to take on your next project
+            </p>
+            <div class="search-bar">
+                <p>What are you looking for?</p>
+                <div class="search-right">
+                    <div>
+                        <h3>Shots</h3>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="search-icon">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div id="main-category">Trending searches</div>
+                <div>landing page</div>
+                <div>e-commerce</div>
+                <div>mobile app</div>
+                <div>logo design</div>
+                <div>dashboard</div>
+                <div>icons</div>
+            </div>
+        </section>
+
+        <section class="product">
+            <menu class="menu">
+                <div class="menu-left">
+                    <h3>Popural</h3>
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+                <div class="menu-center">
+                    <li id="highlighted">Discover</li>
+                    <li>Animation</li>
+                    <li>Branding</li>
+                    <li>Illustration</li>
+                    <li>Mobile</li>
+                    <li>Print</li>
+                    <li>Product Design</li>
+                    <li>Typography</li>
+                    <li>Web Design</li>
+                </div>
+                <div class="menu-right">
+                    <i class="ri-filter-3-line"></i>
+                    <h3>Filter</h3>
+                </div>
+            </menu>
+
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_31_original-5e2099f7a0dfc8a56da9dea27c01efd0.jpg" alt="product 1">
+
+                        <div class="overlay"></div>
+
+                        <div class="hover-content">
+
+                            <div class="hover-text">
+                                <h2>Fitness and step coun..</h2>
+                            </div>
+
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_3_a615730b861d93eaebc6a7c1ec276489.jpg" alt="owner 1">
+                            <h3>Upnow Studio</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>31</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>6.6k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/still-c02e61bb1bbe23c74cc316a80381c2ad.webp" alt="product 2">
+                        <div class="overlay"></div>
+
+                        <div class="hover-content">
+
+                            <div class="hover-text">
+                                <h2>Hero 3D and Animation</h2>
+                            </div>
+
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_4_0ddad37879c5ad169f685c663beba922.png" alt="owner 2">
+                            <h3>Fancy</h3>
+                            <p>Team</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>98</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>6.1k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_32_original-3ea38dfb1ce6061d88bea856bc45c1c9.jpg" alt="product 3">
+
+                        <div class="overlay"></div>
+
+                        <div class="hover-content">
+
+                            <div class="hover-text">
+                                <h2>Leverage Crypto trading...
+                                </h2>
+                            </div>
+
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_6_092502a9a3cea1c44dd5e5f9939430b4.png" alt="owner 3">
+                            <h3>ExtEj UI</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>210</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>9.2k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_33_still-56dc65e9d214a0ab95778b11745b4a77.png" alt="product 4">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Plexo</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_8_a8456497e26e27118763af6fc5b5fbcc.png" alt="owner 4">
+                            <h3>Emote</h3>
+                            <p>Team</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>76</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>5.8k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_34_original-bb09066c4b66752294e2c8d69ee7eab7.png" alt="product 5">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Altecho-Webdesign</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_10_b81496bc4bb212547959f523d2146f27.png" alt="owner 5">
+                            <h3>Victa Ville</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>145</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>7.4k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_35_original-4b3c43159ee3f725177f53d844da029e.png" alt="product 6">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Fitness and step count</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_12_bd55d9caacc12da3b44d12363637c097.png" alt="owner 6">
+                            <h3>Bonsai</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>88</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>6.0k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_36_original-12d4aa04f52edb097fb1c7c7afd299be.jpg" alt="product 7">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Doverange.</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_14_9ab8f67def79c1b8c442ee1874999148.jpg" alt="owner 7">
+                            <h3>Type08</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>64</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>4.9k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_37_original-d639b12b53f0aaff20ebde03f9e8f566.png" alt="product 8">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Financial Mobile App</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_16_606bb85ee728fd3d78bbddf7e70b3901.jpg" alt="owner 8">
+                            <h3>Ronus</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>53</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>3.8k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_38_still-de60b218b87ac00cf7cfe46096701d1e.png" alt="product 9">
+
+                        <div class="overlay"></div>
+
+                        <div class="hover-content">
+
+                            <div class="hover-text">
+                                <h2>Animated Landing Page..</h2>
+                            </div>
+
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_18_e584c0a059b6c7c4f4c23852153e5521.png" alt="owner 9">
+                            <h3>Bato</h3>
+                            <p>TEAM</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>34</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>2.4k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_39_original-d7cfc941b6d908e23895ee6fb3e9864f.jpg" alt="product 10">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Finanace Logo</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_20_ac894a88fa8acddc8b563c266c78df08.jpg" alt="owner 10">
+                            <h3>Jovel Ahmed</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>29</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>1.9k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_40_original-3f5d517b52e3e5c9918aa6f29414e487.jpg" alt="product 11">
+                        <div class="overlay"></div>
+                        <div class="hover-content">
+                            <div class="hover-text">
+                                <h2>Rapid Rabbit Logo</h2>
+                            </div>
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_22_4d393ff0e50f52d72be6a37eeaaefcf6.jpg" alt="owner 11">
+                            <h3>Levi Lowell</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>18</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>1.2k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./Assets/imgi_41_original-9407889cf2190177eafb7b2469647b8f.jpg" alt="product 11">
+
+                        <div class="overlay"></div>
+
+                        <div class="hover-content">
+
+                            <div class="hover-text">
+                                <h2>Free Sample Pack|u..</h2>
+                            </div>
+
+                            <div class="hover-icons">
+                                <div>
+                                    <i class="ri-heart-line"></i>
+                                </div>
+                                <div>
+                                    <i class="ri-bookmark-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-owner">
+                            <img src="./Assets/imgi_24_502c7cc4f5b1f6878438c9461aa1bcaa.jpg" alt="owner 11">
+                            <h3>Ulysses Design Co.</h3>
+                            <p>Pro</p>
+                        </div>
+                        <div class="product-stats">
+                            <div>
+                                <i class="ri-poker-hearts-fill"></i>
+                                <p>18</p>
+                            </div>
+                            <div>
+                                <i class="ri-eye-fill"></i>
+                                <p>1.2k</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-btm">
+                <div></div>
+                <div>
+                    <button class="load-more">Sign up to continue</button>
+                </div>
+                <div>
+                    <div class="scroll-top">
+                        <i class="ri-arrow-up-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ads">
+            <div class="ads-inner">
+                <img src="./Assets/imgi_25_63c418ce9f1b45e141bf28b5_client-logo-03.svg" alt="img 1">
+                <img src="./Assets/imgi_26_63c418ce2c404b364300ba31_client-logo-04.svg" alt="img 2">
+                <img src="./Assets/imgi_27_63c418cea9dabe252e43b0c0_client-logo-07.svg" alt="img 3">
+                <img src="./Assets/imgi_28_63c418cea9dabef95143b0c1_client-logo-06.svg" alt="img 4">
+                <img src="./Assets/imgi_30_63c418ce6a0062cf2d279e35_client-logo-02.svg" alt="img 5">
+            </div>
+            <div class="ads-inner">
+                <img src="./Assets/imgi_25_63c418ce9f1b45e141bf28b5_client-logo-03.svg" alt="img 1">
+                <img src="./Assets/imgi_26_63c418ce2c404b364300ba31_client-logo-04.svg" alt="img 2">
+                <img src="./Assets/imgi_27_63c418cea9dabe252e43b0c0_client-logo-07.svg" alt="img 3">
+                <img src="./Assets/imgi_28_63c418cea9dabef95143b0c1_client-logo-06.svg" alt="img 4">
+                <img src="./Assets/imgi_30_63c418ce6a0062cf2d279e35_client-logo-02.svg" alt="img 5">
+            </div>
+        </section>
+
+        <footer>
+            <div class="top-footer">
+                <div class="logo">
+                    <img src="./Assets/imgi_1_Dribbble-Logo-500x281.png" alt="Dribbble Logo">
+                </div>
+                <div class="footer-items">
+                    <li>For designers</li>
+                    <li>Hire talent</li>
+                    <li>Inspiration</li>
+                    <li>Advertising</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Support</li>
+                </div>
+                <div class="social">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-pinterest-fill"></i>
+                </div>
+            </div>
+            <div class="btm-footer">
+                <div class="footer-left">
+                    <p>&copy; 2025 Dribbble</p>
+                    <p>Terms</p>
+                    <p>Privacy</p>
+                    <P>Cookies</P>
+                </div>
+                <div class="footer-right">
+                    <li>Jobs</li>
+                    <li>Designers</li>
+                    <li>Freelancers</li>
+                    <li>Tags</li>
+                    <li>Places</li>
+                    <li>Resources</li>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
