@@ -1,0 +1,2173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: Reckless;
+    src: url(./fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face {
+    font-family: Midnight;
+    src: url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FBF9EB;
+    position: relative;
+}
+
+.shipping-banner{
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 4rem;
+    background-color: #2A2857;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.shipping-banner p{
+    font-family: "Roboto Mono", monospace;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+nav{
+    position: sticky;
+    top: 10px;
+
+    width: 95vw;
+    margin: 0 auto;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    z-index: 99;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+nav .nav-menu-toggle i{
+    font-size: 4rem;
+    color: rgb(119, 119, 119);
+}
+
+nav .nav-secondary-links{
+    display: none;
+}
+
+nav .nav-primary-links{
+    display: none;
+}
+
+/* *************************** .hero-section ********************************* */
+
+.hero-section{
+    width: 100%;
+    height: 98vh;
+    background-image: url(./images/main-mobile.png);
+    background-size: cover;
+    background-position: 30%;
+    position: relative;
+    border-bottom: 1px solid black;
+    margin-bottom: 8rem;
+}
+
+.hero-content{
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 2rem;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+}
+
+.hero-content h1{
+    text-align: center;
+    font-family: Reckless;
+    font-size: clamp(5.8rem,8vw,8rem);
+    font-weight: 500;
+}
+
+.hero-content h1 br{
+    display: none;
+}
+
+.hero-content p{
+    font-family: Figtree;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.hero-content p br{
+    display: none;
+}
+
+.hero-content button{
+    font-family: Figtree;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.6rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #2A2857;
+    color: white;
+}
+
+.hero-content button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.intro-heading{
+    font-family: Reckless;
+    /* background-color: red; */
+}
+
+.intro-heading h1{
+    font-size: clamp(3.5rem,4vw,6rem);
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    width: 35rem;
+}
+
+/* ************************* product-carousel ************************ */
+
+.products-heading{
+    margin-top: 7rem;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.products-heading .products-heading-content{
+    padding: 0 2rem;
+    display: flex;
+}
+
+.products-heading .products-heading-content button{
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.5rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #DAAEEA;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.product-carousel{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 4rem;
+    overflow-x: auto;
+}
+
+.product-carousel .product-card{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 34rem;
+    gap: 2rem;
+    flex-shrink: 0;
+}
+
+.product-carousel .product-card .product-card-media{
+    width: 100%;
+    height: 38rem;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-carousel .product-card .product-card-media img{
+    height: 85%;
+    width: 85%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.product-carousel .product-card .product-card-media .product-card-meta{
+    padding: 1.5rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+.product-carousel .product-card .product-card-media .product-card-meta button{
+    font-family: Midnight;
+    font-size: 2.3rem;
+    padding: 0 0.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.product-carousel .product-card .product-card-media .product-card-meta p{
+    font-family: Figtree;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-carousel .product-card .product-card-media .product-card-meta p i{
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.product-carousel .product-card .product-card-media .product-card-action{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+}
+
+.product-carousel .product-card .product-card-media .product-card-action button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.product-carousel .product-card .product-card-media .product-card-action button i{
+    font-size: 1.3rem;
+}
+
+.product-carousel .product-card .product-card-media .product-card-action button p{
+    font-family: Figtree;
+    font-size: 1.5rem;
+}
+
+.product-carousel .product-card .product-card-media .product-card-action button:hover{
+    background-color: #2A2857;
+    color: white;
+    cursor: pointer;
+}
+
+.product-carousel .product-card .product-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2rem 0 0;
+}
+
+.product-carousel .product-card .product-card-content h1{
+    font-family: Reckless;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.product-carousel .product-card .product-card-content h3{
+    font-family: Figtree;
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.product-carousel .product-card .product-card-content p{
+    font-family: Figtree;
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.product-carousel .product-card:hover .product-card-media img{
+    transform: scale(1.1);
+}
+
+/* .product-card::-webkit-scrollbar{
+    display: none;
+} */
+
+.products-action{
+    width: 100%;
+    padding: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.products-action button{
+    font-family: Figtree;
+    font-size: 1.8rem;
+    padding: 1.6rem 7rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #2A2857;
+    color: white;
+    white-space: nowrap;
+    border: 1px solid black;
+    transition: all 0.4s ease;
+}
+
+.products-action button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+.product-carousel .product-card1 .product-card-media{
+    background-color: #C1EE91;
+}
+
+.product-carousel .product-card2 .product-card-media{
+    background-color: #fed984;
+}
+
+.product-carousel .product-card3 .product-card-media{
+    background-color: #b1e8c0;
+}
+
+.product-carousel .product-card4 .product-card-media{
+    background-color: #c1e5f9;
+}
+
+.product-carousel .product-card5 .product-card-media{
+    background-color: #c0e571;
+}
+
+.product-carousel .product-card6 .product-card-media{
+    background-color: #fecb97;
+}
+
+.product-carousel .product-card7 .product-card-media{
+    background-color: #ffd0b9;
+}
+
+.product-carousel .product-card8 .product-card-media{
+    background-color: #cde2ff;
+}
+
+.product-carousel .product-card9 .product-card-media{
+    background-color: #aee0f9;
+}
+
+/* ************************* tea-finder ************************ */
+
+.tea-finder{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.finder-heading{
+    margin-top: 7rem;
+    /* background-color: red; */
+}
+
+.finder-heading .finder-heading-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.finder-heading .finder-heading-content button{
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.5rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #FF7F31;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.finder-heading .finder-heading-content h1{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(3.8rem,4vw,6rem);
+}
+
+.tea-finder input{
+    margin-top: 4rem;
+    width: 100%;
+    height: 8vh;
+    font-size: 4rem;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border-radius: 1.3rem;
+    outline: none;
+    border: 1px solid black;
+    font-family: Reckless;
+}
+
+.tea-finder input::placeholder{
+    opacity: 0.6;
+}
+
+.tea-finder .vibe-filter{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tea-finder .vibe-filter p{
+    text-transform: uppercase;
+    font-family: Figtree;
+    font-size: 1.5rem;
+}
+
+.tea-finder .vibe-filter .vibe-filters{
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.tea-finder .vibe-filter .vibe-filters p{
+    font-family: Reckless;
+    font-size: 2.8rem;
+    font-weight: 400;
+    background-color: #dde8f7;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    white-space: nowrap;
+    transition: all 0.4s ease;
+}
+
+.tea-finder .vibe-filter .vibe-filters p:hover{
+    cursor: pointer;
+    background-color: #A2C9FC;
+}
+
+/* ******************************** origin-section ***************************** */
+
+.origin-section{
+    margin-top: 8rem;
+    width: 100%;
+    height: 150vh;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2560);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 1rem;
+    position: relative;
+}
+
+.origin-section .origin-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.origin-section .origin-header button{
+    text-transform: uppercase;
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.6rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #A2C9FC;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.origin-section .origin-header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Midnight;
+    font-weight: 600;
+    color: white;
+    font-size: clamp(8rem,12vw,18rem);
+    line-height: 1;
+}
+
+.origin-section .origin-story{
+    width: 80%;
+}
+
+.origin-section .origin-story p{
+    font-family: Reckless;
+    font-size: clamp(3rem,4vw,6rem);
+    color: white;
+    text-align: center;
+}
+
+.origin-section .origin-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    width: 100%;
+}
+
+.origin-section .origin-values{
+    display: flex;
+    gap: 2rem;
+}
+
+.origin-section .origin-values .origin-value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.origin-section .origin-values .origin-value img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+}
+
+.origin-section .origin-values .origin-value p{
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 15rem;
+}
+
+.origin-section .origin-footer .origin-action button{
+    font-size: 3rem;
+    white-space: nowrap;
+    padding: 1rem 6rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+}
+
+.origin-section .origin-footer .origin-action button:hover{
+    cursor: pointer;
+    background-color: #2A2857;
+    color: white;
+}
+
+.key{
+    position: absolute;
+    right: 4%;
+    top: -1.5%;
+    width: 10rem;
+    height: 10rem;
+    animation: keyup;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes keyup {
+    from{
+        top: -1.5%; 
+    }
+    to{
+        top: -1%;
+    }
+}
+
+.origin-section .origin-badge img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* *************************** reviews-section ************************ */
+
+.reviews-section{
+    margin-top: 8rem;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-section .reviews-header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reviews-section .reviews-header button{
+    text-transform: uppercase;
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.6rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #73BC25;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.reviews-section .reviews-header h1{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(3.8rem,4vw,6rem);
+}
+
+.reviews-section .reviews-header h1 i{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(3.8rem,4vw,6rem);
+}
+
+.reviews-section .review-carousel{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+
+
+.reviews-section .review-carousel .review-card{
+    width: 30rem;
+    height: 44rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 2rem;
+    flex-shrink: 0;
+}
+
+.reviews-section .review-carousel .review-card .review-quote{
+    width: 100%;
+    height: 80%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews-section .review-carousel .review-card .review-quote h1{
+    font-family: Reckless;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.reviews-section .review-carousel .review-card .review-quote p{
+    font-family: Figtree;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+.reviews-section .review-carousel .review-card .review-product{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    border-radius: 1.2rem;
+    border: 1px solid black;
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-image{
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-image img{
+    height: 70%;
+    object-fit: cover;
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-info p{
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    font-size: 1.3rem;
+    text-transform: uppercase
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-info button{
+    font-family: Figtree;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    transition: all 0.2s ease;
+}
+
+.reviews-section .review-carousel .review-card .review-product .review-product-info button:hover{
+    cursor: pointer;
+}
+
+.reviews-section .review-carousel .review-card1{
+    background-color: #F5AF8A;
+}
+
+.reviews-section .review-carousel .review-card1 .review-product{
+    background-color: #EA6D44;
+}
+
+.reviews-section .review-carousel .review-card1 .review-product .review-product-info button:hover{
+    background-color: #F5AF8A;
+}
+
+.reviews-section .review-carousel .review-card2{
+    background-color: #abde75;
+}
+
+.reviews-section .review-carousel .review-card2 .review-product{
+    background-color: #73bc25;
+}
+
+.reviews-section .review-carousel .review-card2 .review-product .review-product-info button:hover{
+    background-color: #abde75;
+}
+
+.reviews-section .review-carousel .review-card3{
+    background-color: #ffd364;
+}
+
+.reviews-section .review-carousel .review-card3 .review-product{
+    background-color: #ffb500;
+}
+
+.reviews-section .review-carousel .review-card3 .review-product .review-product-info button:hover{
+    background-color: #ffd364;
+}
+
+.reviews-section .review-carousel .review-card4{
+    background-color: #ace774;
+}
+
+.reviews-section .review-carousel .review-card4 .review-product{
+    background-color: #8ac044;
+}
+
+.reviews-section .review-carousel .review-card4 .review-product .review-product-info button:hover{
+    background-color: #ace774;
+}
+
+.reviews-section .review-carousel .review-card5{
+    background-color: #d8c3e1;
+}
+
+.reviews-section .review-carousel .review-card5 .review-product{
+    background-color: #c790db;
+}
+
+.reviews-section .review-carousel .review-card5 .review-product .review-product-info button:hover{
+    background-color: #d8c3e1;
+}
+
+/* ******************************** partners-section ******************************** */
+
+.partners-section{
+    margin-top: 8rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2857;
+    border-top: 1px solid black;
+}
+
+.partners-section .partners-image{
+    width: 100%;
+    height: 50%;
+    /* background-image: url(./images/Our_Cafe_Wholesale_Partners.webp); */
+    background-size: cover;
+    background-position: center;
+}
+
+.partners-section .partners-content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 3rem;
+}
+
+.partners-section .partners-content h1{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(5rem,8vw,10rem);
+    text-align: center;
+    color: white;
+}
+
+.partners-section .partners-content p br{
+    display: none;
+}
+
+.partners-section .partners-content p{
+    font-family: Figtree;
+    color: white;
+    font-size: clamp(2rem,3vw,3rem);
+    text-align: center;
+}
+
+.partners-section .partners-content button{
+    font-family: Figtree;
+    font-size: clamp(1.8rem,2vw,2rem);
+    padding: 1rem 5rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+}
+
+.partners-section .partners-content button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+/* ******************************** latte-section ******************************** */
+
+.latte-section{
+    width: 100%;
+    height: 130vh;
+    background-color: #9F6429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 1.5rem;
+    position: relative;
+}
+
+.latte-section .latte-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.latte-section .latte-header button{
+    text-transform: uppercase;
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.6rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #FFCB96;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.latte-section .latte-header h1{
+    font-family: Midnight;
+    font-weight: 500;
+    font-size: clamp(6.5rem,8vw,10rem);
+    text-align: center;
+    color: white;
+    line-height: 0.9;
+}
+
+.latte-section .latte-header p{
+    text-transform: uppercase;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.latte-section .latte-product{
+    width: 100%;
+    height: 60%;
+    background-color: #FFCB96;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.latte-section .latte-product .latte-product-image{
+    height: 25%;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    justify-content: center;
+}
+
+.latte-section .latte-product .latte-product-image .latte-mobile-image{
+    height: 100%;
+    object-fit: cover;
+    transform: scale(2.2);
+}
+
+.latte-section .latte-product .latte-product-image .latte-desktop-image{
+    display: none;
+}
+
+.latte-section .latte-product .latte-product-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: burlywood; */
+    height: 60%;
+    padding: 0 2rem;
+}
+
+.latte-section .latte-product .latte-product-content button{
+    text-transform: uppercase;
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.6rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #e7923d;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.latte-section .latte-product .latte-product-content h1{
+    font-family: Reckless;
+    font-size: clamp(5rem,8vw,7.5rem);
+    font-weight: 400;
+    text-align: center;
+}
+
+.latte-section .latte-product .latte-product-content p{
+    font-family: Figtree;
+    color: black;
+    font-size: clamp(2rem,3vw,2rem);
+    text-align: center;
+    opacity: 0.9;
+}
+
+.latte-section .latte-product .latte-product-content .latte-shop-button{
+    font-family: Figtree;
+    font-family: Figtree;
+    font-size: clamp(1.5rem,2vw,2rem);
+    padding: 2rem 6.5rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    transition: all 0.3s ease;
+    background-color: white;
+    transform: rotate(0deg);
+    transition: all 0.2s ease;
+}
+
+.latte-section .latte-product .latte-product-content .latte-shop-button:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.key{
+    position: absolute;
+}
+
+/* ********************* journal-section ************************* */
+
+.journal-section{
+    margin-top: 8rem;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-section .journal-header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.journal-section .journal-header button{
+    text-transform: uppercase;
+    font-family: Midnight;
+    width: fit-content;
+    font-size: clamp(3.6rem,4vw,6rem);
+    line-height: 0.8;
+    padding: 0.4rem;
+    background-color: #FFB500;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    transform: rotate(-3deg);
+}
+
+.journal-section .journal-header h1{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(3.8rem,4vw,6rem);
+}
+
+.journal-section .journal-header h1 i{
+    font-family: Reckless;
+    font-weight: 500;
+    font-size: clamp(3.8rem,4vw,6rem);
+}
+
+.journal-section .journal-carousel{
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.journal-section .journal-carousel .journal-card{
+    height: 40rem;
+    width: 34rem;
+    background-color: #c0dbff;
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.journal-section .journal-carousel .journal-card .journal-card-media{
+    height: 85%;
+    width: 100%;
+    background-color: #2b2957;
+    border-bottom: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.journal-section .journal-carousel .journal-card .journal-card-media img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.journal-section .journal-carousel .journal-card:hover .journal-card-media img{
+    transform: scale(1.06);
+}
+
+.journal-section .journal-carousel .journal-card .journal-card-media button{
+    position: absolute;
+    font-family: Midnight;
+    text-transform: uppercase;
+    color: black;
+    font-size: 2.5rem;
+    top: 3%;
+    left: 3%;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.journal-section .journal-carousel .journal-card:hover .journal-card-media button{
+    transform: rotate(-4deg);
+}
+
+.journal-section .journal-carousel .journal-card .journal-card-content{
+    padding: 1rem 2rem;
+
+}
+
+.journal-section .journal-carousel .journal-card .journal-card-content p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.journal-action{
+    width: 100%;
+    padding: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.journal-action button{
+    font-family: Figtree;
+    font-size: 1.8rem;
+    padding: 1.6rem 7rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #2A2857;
+    color: white;
+    white-space: nowrap;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.journal-action button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+/* ********************* about-section ************************* */
+
+.about-section{
+    height: 90vh;
+    width: 100%;
+    background-color: #f26513;
+    border-bottom: 1px solid black;
+}
+
+.about-section .about-image{
+    width: 100%;
+    height: 60%;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=2700.0);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-section .about-card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    color: white;
+    text-align: center;
+
+}
+
+.about-section .about-card h1{
+    font-family: Reckless;
+    font-size: clamp(4rem,5vw,7rem);
+    font-weight: 500;
+}
+
+.about-section .about-card p{
+    font-family: Figtree;
+    font-size: clamp(2rem,3vw,2.5rem);
+    color: white;
+}
+
+.about-section .about-card button{
+    font-family: Figtree;
+    font-size: 1.8rem;
+    padding: 1.5rem 7rem;
+    border-radius: 3rem;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+
+.about-section .about-card button:hover{
+    cursor: pointer;
+    background-color: #2A2857;
+    color: white;
+}
+
+/* ********************* site-footer ************************* */
+
+.site-footer{
+    width: 100%;
+    height: 110vh;
+    background-color: #c0dbff;
+    padding: 0 1rem;
+}
+
+.site-footer .footer-newsletter{
+    width: 100%;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.site-footer .footer-newsletter .newsletter-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.site-footer .footer-newsletter .newsletter-copy h1{
+    font-family: Midnight;
+    font-size: clamp(3.5rem,3vw,4rem);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.site-footer .footer-newsletter .newsletter-copy p{
+    font-family: Reckless;
+    font-weight: 400;
+    font-size: clamp(2.7rem,2vw,3rem);
+    opacity: 0.8;
+}
+
+.site-footer .footer-newsletter .newsletter-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.site-footer .footer-newsletter .newsletter-form input{
+    font-family: Reckless;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
+    font-size: 2.2rem;
+    padding: 1.3rem;
+    outline: none;
+}
+
+.site-footer .footer-newsletter .newsletter-form input::placeholder{
+    opacity: 0.5;
+}
+
+.site-footer .footer-newsletter .newsletter-form button{
+    font-family: Figtree;
+    font-size: 2rem;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    border: 1px solid black;
+    color: white;
+    background-color: #2b2957;
+    transition: all 0.4s ease;
+}
+
+.site-footer .footer-newsletter .newsletter-form button:hover{
+    cursor: pointer;
+    background-color: #FBF9EB;
+    color: black;
+}
+
+.site-footer .footer-newsletter .social-links{
+    display: none;
+}
+
+/* ****************** footer *************************** */
+
+.site-footer .footer-links .footer-link-group .footer-link-list a{
+    display: none;
+}
+
+.footer-links{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2857;
+    border-radius: 2rem;
+    gap: 1.5rem;
+}
+
+.footer-links .footer-link-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links .footer-link-group .footer-link-heading h1{
+    font-family: Reckless;
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.footer-links .footer-link-group .footer-accordion-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #c0dbff;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links .footer-link-group .footer-accordion-icon i{
+    font-size: 2rem;
+}
+
+/* ******************* footer-brand *********************** */
+
+.footer-brand{
+    width: 100%;
+    height: 60vw;
+    background-color: #c0dbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.footer-brand .footer-logo{
+    width: 40vw;
+    object-fit: cover;
+}
+
+.footer-brand .footer-landscape{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.footer-brand p{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.3rem;
+    text-align: center;
+    opacity: 0.8;
+    padding-bottom: 1rem;
+}
+
+@media (min-width:768px) {
+    .partners-section .partners-image{
+        height: 60%;
+        background-position: center;
+    }
+    .partners-section .partners-content{
+        height: 40%;
+    }
+    .latte-section .latte-product .latte-product-content{
+        padding: 0 6rem;
+    }
+    .footer-brand .footer-logo{
+        width: 30rem;
+        object-fit: cover;
+    }
+    .footer-brand{
+        height: 40vw;
+    }
+    .key{
+        height: 12rem;
+        width: 12rem;
+    }
+}
+
+@media (min-width:1024px) {
+    nav{
+        width: 98vw;
+    }
+
+    .nav-legacy-logo{
+        display: none;
+    }
+
+    .nav-menu-toggle{
+        display: none;
+    }
+
+    nav .nav-primary-links{
+        display: flex;
+        align-items: center;
+        gap: 4.2rem;
+    }
+
+    nav .nav-primary-links p{
+        font-family: Reckless;
+        font-size: 2.3rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    nav .nav-primary-links p::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+
+    nav .nav-primary-links p:hover::after{
+        width: 100%;
+    }
+
+    nav .nav-primary-links p:hover{
+        cursor: pointer;
+    }
+
+    nav .nav-primary-links p span{
+        display: inline-block;
+        background-color: #C0DBFF;
+        height: 1.5rem;
+        width: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.7rem;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    nav .nav-primary-links p span i{
+        font-size: 2rem;
+    }
+
+    nav .nav-primary-links p span .star{
+        background-color: white;
+        border: none;
+        color: orange;
+    }
+
+    nav .nav-secondary-links{
+        display: flex;
+        align-items: center;
+        gap: 2.3rem;
+    }
+
+    .nav-secondary-links p{
+        font-family: "Roboto Mono", monospace;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: black;
+        position: relative;
+    }
+
+    .nav-secondary-links p::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -7%;
+        width: 0%;
+        height: 1px;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-secondary-links p:hover::after{
+        width: 100%;
+    }
+
+    .nav-secondary-links p:hover{
+        cursor: pointer;
+    }
+
+    .hero-section{
+        background-image: url(./images/bgimage.png);
+        background-size: cover;
+        height: 95vh;
+    }
+    .hero-content{
+        /* background-color: aquamarine; */
+        gap: 4.2rem;
+        color: white;
+        padding: 0 3rem;
+        align-items: flex-start;
+    }
+    .hero-content h1{
+        text-align: start;
+        /* background-color: aqua; */
+    }
+
+    .hero-content h1 br{
+        display: block;
+    }
+
+    .hero-content p{
+        text-align: start;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    .hero-content p br{
+        display: block;
+    }
+
+    .hero-content button{
+        width: fit-content;
+        font-size: 1.8rem;
+        padding: 1.6rem 7rem;
+        border: none;
+        border-radius: 3rem;
+        background-color: #2A2857;
+        color: white;
+        border: 1px solid black;
+        transition: all 0.4s ease;
+    }
+
+    .intro-heading{
+        font-family: Reckless;
+        /* background-color: red; */
+    }
+
+    .intro-heading h1{
+        font-weight: 500;
+        margin: auto;
+        text-align: center;
+        width: 55%;
+    }
+
+    .products-heading .products-heading-content{
+        justify-content: center;
+    }
+
+    .product-carousel{
+        padding: 0 5rem;
+    }
+
+    .tea-finder{
+        width: 100%;
+        padding: 0 22vw;
+    }
+
+    .tea-finder input{
+        width: 80%;
+    }
+
+    .tea-finder .vibe-filter{
+        margin-top: 7rem;
+    }
+
+    .origin-section{
+        height: 200vh;
+    }
+
+    .origin-section .origin-values .origin-value img{
+        height: 10rem;
+        width: 10rem;
+        object-fit: cover;
+    }
+
+    .reviews-section{
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .reviews-section .review-carousel{
+        justify-content: center;
+    }
+
+    .partners-section{
+        flex-direction: row;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .partners-section .partners-image{
+        width: 50%;
+        height: 100%;
+    }
+
+    .partners-section .partners-content{
+        width: 50%;
+        height: 100%;
+    }
+
+    .partners-section .partners-content{
+        align-items: flex-start;
+        padding: 1rem 6rem;
+    }
+
+    .partners-section .partners-content h1{
+        text-align: start;
+    }
+
+    .partners-section .partners-content p br{
+        display: none;
+    }
+
+    .partners-section .partners-content p{
+        text-align: start;
+    }
+
+    .latte-section .latte-header h1 br{
+        display: none;
+    }
+
+    .latte-section .latte-product{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .latte-section .latte-product .latte-product-image{
+        width: 40%;
+        height: 100%;
+    }
+    .latte-section .latte-product .latte-product-image .latte-mobile-image{
+        display: none;
+    }
+
+    .latte-section .latte-product .latte-product-image .latte-desktop-image{
+        height: 60%;
+        display: block;
+        object-fit: cover;
+        transform: scale(1.4);
+    }
+
+    .latte-section .latte-product .latte-product-content{
+        width: 50%;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .latte-section .latte-product .latte-product-content h1{
+        text-align: start;
+    }
+
+    .latte-section .latte-product .latte-product-content p{
+        text-align: start;
+    }
+
+    .journal-section{
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .about-section{
+        height: 90vh;
+        width: 100%;
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=2700.0);
+        background-size: cover;
+        background-position: center;
+        padding: 4rem;
+    }
+
+    .about-section .about-image{
+        display: none;
+    }
+
+    .about-section .about-card{
+        height: 100%;
+        width: 51rem;
+        background-color: #f26513;
+        border: 1px solid black;
+        border-radius: 1.5rem;
+        padding: 10rem 5rem;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .site-footer{
+        padding: 0 5rem;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+
+    .site-footer .footer-newsletter{
+        width: 90rem;
+        /* background-color: lightcoral; */
+        margin: auto;
+    }
+
+    .site-footer .footer-newsletter .newsletter-copy{
+        width: 57rem;
+    }
+
+    .site-footer .footer-newsletter .newsletter-form input{
+        width: 40rem;
+    }
+
+    .site-footer .footer-newsletter .newsletter-form button{
+        padding: 1.2rem 6rem;
+    }
+
+    .newsletter-actions{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site-footer .footer-newsletter .newsletter-form{
+        flex-direction: row;
+    }
+
+    .site-footer .footer-newsletter .social-links{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .site-footer .footer-newsletter .social-links .social-link{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all 0.4s ease;
+    }
+
+    .site-footer .footer-newsletter .social-links .social-link i{
+        font-size: 3rem;
+    }
+
+    .site-footer .footer-newsletter .social-links .social-link:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .site-footer .footer-links{
+        width: 100%;
+        height: fit-content;
+        padding: 4rem;
+        background-color: #2A2857;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .site-footer .footer-links .footer-link-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        /* background-color: #73BC25; */
+        flex-shrink: 0;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-heading h1{
+        font-family: Reckless;
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-list{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-list a{
+        display: inline-block;
+        font-family: Figtree;
+        text-decoration: none;
+        font-size: 1.9rem;
+        color: rgb(151, 151, 151);
+        position: relative;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-list a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: white;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-list a:hover::after{
+        width: 100%;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-link-list a:hover{
+        color: white;
+    }
+
+    .site-footer .footer-links .footer-link-group .footer-accordion-icon{
+        display: none;
+    }
+
+    .site-footer .footer-links .footer-divider{
+        display: none;
+    }
+    .footer-brand{
+        height: 35rem;
+    }
+}
+
+/* ================= RESPONSIVE POLISH ================= */
+
+img{
+    max-width: 100%;
+}
+
+button,
+input{
+    font: inherit;
+}
+
+.hero-content,
+.intro-heading,
+.products-heading-content,
+.tea-finder,
+.reviews-section,
+.journal-section,
+.footer-newsletter{
+    max-width: 144rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-carousel,
+.review-carousel,
+.journal-carousel{
+    scroll-snap-type: x proximity;
+}
+
+.product-card,
+.review-card,
+.journal-card{
+    scroll-snap-align: start;
+}
+
+.origin-section,
+.latte-section{
+    min-height: 92rem;
+    height: auto;
+}
+
+.origin-section{
+    gap: 8rem;
+    background-position: center;
+}
+
+.origin-story{
+    max-width: 90rem;
+}
+
+.latte-section{
+    gap: 4rem;
+}
+
+.partners-section,
+.about-section{
+    min-height: 64rem;
+    height: auto;
+}
+
+.site-footer{
+    height: auto;
+    min-height: 0;
+}
+
+.footer-links{
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px){
+    nav{
+        width: calc(100% - 2rem);
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-menu-toggle i{
+        font-size: 3.2rem;
+    }
+
+    .hero-section{
+        min-height: 68rem;
+        height: 100svh;
+    }
+
+    .hero-content{
+        gap: 1.8rem;
+        bottom: 4rem;
+    }
+
+    .hero-content h1{
+        font-size: clamp(4.8rem, 16vw, 6.2rem);
+        line-height: 0.95;
+    }
+
+    .hero-content p,
+    .partners-content p,
+    .about-card p{
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .intro-heading h1{
+        width: min(100% - 3rem, 42rem);
+    }
+
+    .product-card,
+    .journal-card{
+        width: min(82vw, 34rem);
+    }
+
+    .product-card-media{
+        height: 34rem;
+    }
+
+    .product-card-meta{
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .product-card-meta button{
+        font-size: 1.8rem;
+    }
+
+    .products-action,
+    .journal-action{
+        padding: 6rem 2rem;
+    }
+
+    .products-action button,
+    .journal-action button,
+    .about-card button{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .tea-finder input{
+        height: auto;
+        font-size: 3rem;
+        padding: 1.3rem 1.8rem;
+    }
+
+    .vibe-filters p{
+        white-space: normal;
+        font-size: 2.2rem;
+    }
+
+    .origin-values{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .origin-value{
+        max-width: 22rem;
+    }
+
+    .review-card{
+        width: min(84vw, 30rem);
+        height: auto;
+        min-height: 42rem;
+    }
+
+    .review-product-info p{
+        font-size: 1.1rem;
+    }
+
+    .review-product-info button{
+        padding: 0.8rem 1.1rem;
+    }
+
+    .partners-section{
+        min-height: 72rem;
+    }
+
+    .latte-product{
+        min-height: 66rem;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .latte-mobile-image{
+        transform: scale(1.25);
+    }
+
+    .latte-product-content{
+        min-height: 42rem;
+        padding-bottom: 2rem;
+    }
+
+    .about-section{
+        min-height: 72rem;
+    }
+
+    .about-card{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .newsletter-form button{
+        width: 100%;
+    }
+
+    .footer-link-heading h1{
+        font-size: 2.4rem;
+    }
+
+    .footer-brand{
+        min-height: 24rem;
+        height: 68vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .product-card{
+        width: 36rem;
+    }
+
+    .reviews-section,
+    .journal-section{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .origin-section{
+        min-height: 105rem;
+    }
+
+    .latte-product{
+        max-width: 86rem;
+    }
+
+    .site-footer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .product-carousel,
+    .review-carousel,
+    .journal-carousel{
+        justify-content: flex-start;
+    }
+
+    .review-carousel{
+        overflow-x: auto;
+    }
+
+    .origin-section{
+        min-height: 120rem;
+    }
+
+    .latte-section{
+        min-height: 100rem;
+    }
+
+    .latte-product{
+        max-width: 132rem;
+        min-height: 56rem;
+    }
+
+    .footer-newsletter{
+        width: min(100%, 100rem);
+    }
+}
+
+@media (min-width: 1280px){
+    .product-carousel,
+    .review-carousel,
+    .journal-carousel{
+        padding-left: max(5rem, calc((100vw - 144rem) / 2));
+        padding-right: max(5rem, calc((100vw - 144rem) / 2));
+    }
+}
+
+
+
+
+/* ================= CUSTOM SCROLLBAR ================= */
+
+/* Firefox */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #2A2857 #dfe8f5;
+}
+
+/* ================= VERTICAL SCROLLBAR ================= */
+
+/* Chrome / Edge / Safari */
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #dfe8f5;
+    border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        180deg,
+        #2A2857,
+        #4a47a3
+    );
+    border-radius: 100px;
+    border: 2px solid #dfe8f5;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(
+        180deg,
+        #1d1b44,
+        #2A2857
+    );
+}
+
+/* ================= HORIZONTAL SCROLLBAR HIDE ================= */
+
+.product-carousel,
+.reviews-section .review-carousel,
+.journal-section .journal-carousel{
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+}
+
+/* Chrome / Safari */
+.product-carousel::-webkit-scrollbar,
+.reviews-section .review-carousel::-webkit-scrollbar,
+.journal-section .journal-carousel::-webkit-scrollbar{
+    display: none;
+}
