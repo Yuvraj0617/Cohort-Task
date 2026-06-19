@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="brand">
+                <h1>Task Manager</h1>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+                <i class="theme-icon ri-moon-fill"></i>
+            </button>
+        </div>
+
+        <section class="create-panel">
+            <div class="panel-title">
+                <span class="panel-icon"><i class="ri-add-line"></i></span>
+                <h2>Create New Task</h2>
+            </div>
+
+            <form class="form" id="task-form">
+                <input id="task-input" type="text" placeholder="Enter Task title..." autocomplete="off" />
+                <select id="category-input" aria-label="Task category">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="study">Study</option>
+                </select>
+                <button id="add" type="submit">
+                    <i class="ri-add-line"></i>
+                    <span>Add Task</span>
+                </button>
+            </form>
+        </section>
+
+        <div class="summary">
+            <span id="task-count">0 tasks</span>
+            <button id="clear-completed" type="button">Clear done</button>
+        </div>
+
+        <div class="tasks-list" id="tasks-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
