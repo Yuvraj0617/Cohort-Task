@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack Pro | Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <script src="shared.js" defer></script>
+    <script src="auth.js" defer></script>
+</head>
+<body class="auth-page">
+    <main class="auth-shell">
+       
+
+        <section class="auth-card">
+            <h2>Welcome back</h2>
+            <p class="auth-subtitle">Login to your FinTrack workspace.</p>
+
+            <form id="auth-form" data-mode="login" novalidate>
+                <div class="fields">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" autocomplete="username" required>
+                </div>
+                <div class="fields">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
+                </div>
+                <p id="auth-message" class="form-message" aria-live="polite"></p>
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="Register.html">Register here</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

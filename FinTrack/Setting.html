@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack Pro | Settings</title>
+    <link rel="stylesheet" href="Setting.css">
+    <script src="shared.js" defer></script>
+    <script src="settings.js" defer></script>
+</head>
+<body class="app-page">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand-block">
+                <div class="brand-mark">FinTrack Pro</div>
+                <p>Enterprise Finance</p>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Sidebar navigation">
+                <a class="nav-link" href="Dashboard.html">Dashboard</a>
+                <a class="nav-link active" href="Setting.html">Settings</a>
+            </nav>
+
+        </aside>
+
+        <section class="main-panel">
+            <header class="topbar">
+                <div>
+                    <h1>Settings</h1>
+                    <p>Manage your account profile and app formatting.</p>
+                </div>
+                <div class="topbar-actions">
+                    <span id="current-user" class="user-chip"></span>
+                    <button id="logout-btn" class="ghost-button" type="button">Logout</button>
+                </div>
+            </header>
+
+            <section class="content-grid single-column settings-layout">
+                <article class="panel settings-panel">
+                    <div class="panel-head settings-head">
+                        <div>
+                            <h2>Profile Details</h2>
+                        </div>
+                    </div>
+
+                    <form id="settings-form" class="settings-form" novalidate>
+                        <div class="settings-grid">
+                            <div class="fields">
+                                <label for="profile-name">Full Name</label>
+                                <input type="text" id="profile-name" name="profile-name" maxlength="60" required>
+                            </div>
+                            <div class="fields">
+                                <label for="profile-currency">Primary Currency</label>
+                                <select id="profile-currency" name="profile-currency" required>
+                                    <option value="USD">USD ($)</option>
+                                    <option value="EUR">EUR (€)</option>
+                                    <option value="GBP">GBP (£)</option>
+                                    <option value="INR">INR (₹)</option>
+                                    <option value="JPY">JPY (¥)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p id="settings-message" class="form-message" aria-live="polite"></p>
+
+                        <div class="settings-actions">
+                            <button type="submit">Save Changes</button>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </section>
+    </div>
+
+</body>
+</html>
