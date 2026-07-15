@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>ProdDash - Productivity Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrollbar.css">
+</head>
+<body>
+
+<div id="appLayout" class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-header"><span class="sidebar-logo">ProdDash</span></div>
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+    <div class="sidebar-footer">
+      <button class="btn-sidebar" id="themeBtn"></button>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="topbar-date" id="topDate"></span>
+        <span class="topbar-time" id="topTime"></span>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-weather" id="topWeather"></div>
+        <div class="topbar-goals" id="topGoals"></div>
+      </div>
+    </header>
+
+    <div class="main-area" id="mainArea">
+
+      <div class="view" id="viewDashboard">
+        <div class="dashboard">
+          <div class="dash-header">
+            <h1>Dashboard</h1>
+            <p id="dashGreeting"></p>
+          </div>
+          <div class="analytics-grid" id="analyticsGrid"></div>
+          <div class="dash-row" id="dashTimerRow"></div>
+          <div class="dash-row two-col" id="dashMiddleRow"></div>
+          <div class="dash-row two-col" id="dashBottomRow"></div>
+        </div>
+      </div>
+
+      <div class="view" id="viewTodo">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Todo List</h2>
+        </div>
+        <div class="feature-body">
+          <div class="input-group">
+            <input type="text" class="input" id="todoInput" placeholder="Add a new task...">
+            <button class="btn btn-primary" id="addTodoBtn"><i class="ri-add-line"></i> Add</button>
+          </div>
+          <div class="filter-bar" id="todoFilters"></div>
+          <ul class="todo-list" id="todoList"></ul>
+          <div class="todo-footer">
+            <span id="todoStats"></span>
+            <button class="btn btn-ghost btn-sm" id="clearDone" style="display:none"><i class="ri-delete-bin-line"></i> Clear completed</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="view" id="viewPlanner">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Daily Planner</h2>
+        </div>
+        <div class="feature-body">
+          <div class="planner-list" id="plannerList"></div>
+        </div>
+      </div>
+
+      <div class="view" id="viewGoals">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Daily Goals</h2>
+        </div>
+        <div class="feature-body">
+          <div class="input-group">
+            <input type="text" class="input" id="goalInput" placeholder="Set a goal for today...">
+            <button class="btn btn-primary" id="addGoalBtn"><i class="ri-add-line"></i> Add</button>
+          </div>
+          <div class="goals-progress" id="goalsProgress"></div>
+          <ul class="goals-list" id="goalList"></ul>
+        </div>
+      </div>
+
+      <div class="view" id="viewPomodoro">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Pomodoro Timer</h2>
+        </div>
+        <div class="feature-body">
+          <div class="pomodoro-body" id="pomodoroBody"></div>
+        </div>
+      </div>
+
+      <div class="view" id="viewQuote">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Motivation</h2>
+        </div>
+        <div class="feature-body">
+          <div class="quote-body" id="quoteBody"></div>
+        </div>
+      </div>
+
+      <div class="view" id="viewWeather">
+        <div class="feature-header">
+          <button class="back-btn" data-back="dashboard"><i class="ri-arrow-left-line"></i></button>
+          <h2>Weather</h2>
+        </div>
+        <div class="feature-body">
+          <div class="weather-body" id="weatherBody"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
